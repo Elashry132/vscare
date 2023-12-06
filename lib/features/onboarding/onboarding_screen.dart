@@ -37,7 +37,9 @@ class OnBoardingScreen extends StatelessWidget {
                         textAlign: TextAlign.center,
                         style: TextStyles.font13GrayRegular,
                       ),
-
+                      SizedBox(
+                        height: 32.h,
+                      ),
                       const GetStartedButton(),
                     ],
                   ),
