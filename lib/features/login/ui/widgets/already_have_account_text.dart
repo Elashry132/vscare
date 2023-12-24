@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:vscare/core/themming/styles.dart';
+
+import '../../../../core/themming/styles.dart';
 
 class AlreadyHaveAccountText extends StatelessWidget {
   const AlreadyHaveAccountText({super.key});
@@ -11,13 +12,13 @@ class AlreadyHaveAccountText extends StatelessWidget {
       text: TextSpan(
         children: [
           TextSpan(
-            text: "Don't have an account? ",
+            text: 'Already have an account?',
             style: TextStyles.font13DarkBlueRegular,
           ),
           TextSpan(
-            text: "Sign up",
+            text: ' Sign Up',
             style: TextStyles.font13BlueSemiBold,
-          )
+          ),
         ],
       ),
     );
