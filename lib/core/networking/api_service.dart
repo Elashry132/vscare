@@ -1,4 +1,6 @@
 import 'package:dio/dio.dart';
+import 'package:vscare/features/signup/data/models/sign_up_request_body.dart';
+import 'package:vscare/features/signup/data/models/sign_up_response.dart';
 
 
 import '../../features/login/data/models/login_request_body.dart';
@@ -16,5 +18,9 @@ abstract class ApiService {
   @POST(ApiConstants.login)
   Future<LoginResponse> login(
     @Body() LoginRequestBody loginRequestBody,
+  );
+  @POST(ApiConstants.signup)
+  Future<SignupResponse> signup(
+    @Body() SignUpRequestBody signUpRequestBody,
   );
 }
